@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/left"
+        android:layout_weight="1"
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/itembg">
+
+        <RelativeLayout
+            android:id="@+id/headings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/book_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Book Title : "/>
+
+            <TextView
+                android:id="@+id/borrowed_isbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_id"
+                android:textSize="15dp"
+                android:text="Book Author : "/>
+
+            <TextView
+                android:id="@+id/cnic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/borrowed_isbn"
+                android:textSize="15dp"
+                android:text="ISBN : "/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cnic"
+                android:textSize="15dp"
+                android:text="Available On : "/>
+
+            <TextView
+                android:id="@+id/fineStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/status"
+                android:textSize="15dp"
+                android:text="Fine : "/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:layout_alignBaseline="@+id/headings"
+        android:layout_alignBottom="@+id/headings"
+        android:layout_toEndOf="@+id/headings"
+        android:layout_toRightOf="@+id/headings">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:layout_below="@+id/title"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/isbn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/author"
+            android:layout_alignStart="@+id/author"
+            android:layout_below="@+id/author"
+            android:width="@dimen/activity_vertical_margin"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/avail_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/isbn"
+            android:layout_alignStart="@+id/isbn"
+            android:layout_below="@+id/isbn"
+            android:width="@dimen/activity_vertical_margin"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rss_headings"
+            android:layout_below="@+id/tv"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+        <TextView
+            android:id="@+id/row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Row"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/stand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stand"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/shelve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Shelve"
+            android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/rss_headings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/rownum"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"/>
+            <TextView
+                android:id="@+id/standnum"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/shelvenum"
+                android:layout_weight="1"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

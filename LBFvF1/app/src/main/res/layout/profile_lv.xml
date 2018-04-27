@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/itembg">
+
+
+        <RelativeLayout
+            android:id="@+id/headings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp">
+
+            <TextView
+            android:id="@+id/book_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Borrow ID : "/>
+
+            <TextView
+                android:id="@+id/borrowed_isbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_id"
+                android:textSize="15dp"
+                android:text="Book ISBN : "/>
+
+            <TextView
+                android:id="@+id/cnic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/borrowed_isbn"
+                android:textSize="15dp"
+                android:text="User ID : "/>
+
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cnic"
+                android:textSize="15dp"
+                android:text="Fine Status : "/>
+
+            <TextView
+                android:id="@+id/fineStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/status"
+                android:textSize="15dp"
+                android:text="Fine : "/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/headings"
+            android:layout_alignBottom="@+id/headings"
+            android:layout_toEndOf="@+id/headings"
+            android:layout_toRightOf="@+id/headings">
+
+            <TextView
+                android:id="@+id/tvbID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:width="@dimen/activity_vertical_margin"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/b_isbn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvbID"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:width="@dimen/activity_vertical_margin"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/u_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/b_isbn"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:width="@dimen/activity_vertical_margin"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/is_fine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/u_id"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:width="@dimen/activity_vertical_margin"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/fine_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/is_fine"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:width="@dimen/activity_vertical_margin"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:layout_below="@+id/headings"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:text="Start Date"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/startDate"
+            android:textSize="15dp"
+            android:layout_below="@+id/start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/headings"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:text="End Date"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/endDate"
+            android:textSize="15dp"
+            android:layout_below="@+id/end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">LBF v F1</string>
+    <string name="hint_username">User name</string>
+    <string name="hint_password">Password</string>
+
+    <string name="adminlogin">Login(ADMIN)</string>
+    <string name="userlogin">Login(USER)</string>
+
+    <string name="category">Category</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_user__main">User_Main</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="HelpInfo">HELP : LBF, Library Book Finder helps to find the needed book from your library. Just put the right
+                input up there to search book by name, author’s name or by book’s ISBN (International Standard Book Number )
+                and press the search button. You will be entertained with book’s info like if available then where it placed in the
+                library. Just go over there and get the book.</string>
+
+
+    <string name="ProfileNote">NOTE : Please check your last date of returning book and return it within given limits.
+                OtherWise you will be fined Rs.100 per day.</string>
+
+</resources>
